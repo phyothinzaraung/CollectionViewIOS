@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdsCollectionViewCell" id="gTV-IL-0wX" customClass="AdsCollectionViewCell" customModule="CollectionView_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-b6-aRv">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="advertisement" translatesAutoresizingMaskIntoConstraints="NO" id="0vz-ha-baQ">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0vz-ha-baQ" secondAttribute="trailing" id="IyQ-Gw-Yzj"/>
+                            <constraint firstItem="0vz-ha-baQ" firstAttribute="leading" secondItem="XAK-b6-aRv" secondAttribute="leading" id="VZ5-Kt-W2Z"/>
+                            <constraint firstItem="0vz-ha-baQ" firstAttribute="top" secondItem="XAK-b6-aRv" secondAttribute="top" id="o36-cf-hqQ"/>
+                            <constraint firstAttribute="bottom" secondItem="0vz-ha-baQ" secondAttribute="bottom" id="xoQ-kK-PjB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XAK-b6-aRv" secondAttribute="trailing" id="1le-gH-isz"/>
+                <constraint firstItem="XAK-b6-aRv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B75-b9-9va"/>
+                <constraint firstAttribute="bottom" secondItem="XAK-b6-aRv" secondAttribute="bottom" id="Id5-TW-3nh"/>
+                <constraint firstItem="XAK-b6-aRv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yBr-i7-vQe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="298" height="136"/>
+            <connections>
+                <outlet property="ivAdvertisement" destination="0vz-ha-baQ" id="8Sz-Xc-8cS"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="192.50374812593705"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="advertisement" width="504" height="315"/>
+    </resources>
+</document>
